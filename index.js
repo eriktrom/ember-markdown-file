@@ -17,7 +17,7 @@ module.exports = {
     let addonOptions = (this.parent && this.parent.options) ||
                        (this.app && this.app.options);
     let config = addonOptions[this.name] || {};
-    this.markdownRoot = path.resolve(this.project.root, config.markdownRoot) ||
+    this.markdownRoot = path.resolve(this.project.root, config.markdown) ||
                         path.join(this.project.root, 'markdown'); // original default
   },
 
